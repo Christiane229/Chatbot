@@ -7,7 +7,7 @@ function App() {
   async function enregistrer(e) {
     e.preventDefault();
     console.log("Nom :", nom, "Prénom :", prenom);
-    const url = "http://localhost:8000/users";
+    const url = "https://christianehagli.pythonanywhere.com/users";
     const response = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
